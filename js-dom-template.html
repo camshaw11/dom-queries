@@ -67,28 +67,28 @@
 			};
 
 
-			function domQueryC(){
+			function domQueryC(dottedBorder){
 				// get element with selector of li green
 				var el = document.querySelectorAll('li.green')
 				// style second array item with a border
-				[1].style.border= '2px dotted black';
+				[1].style.border= dottedBorder;
 
 				console.dir(el);
 			};
 
-			function domQueryD(){
+			function domQueryD(bodyStyle){
 				// get element body
 				var el = document.querySelectorAll('body')
 				// style body with border
-				[0].style.border= '6px dotted black';
+				[0].style.backgroundColor= bodyStyle;
 
 				console.dir(el);
 			};
 
 			domQueryA('2px solid black');
 			domQueryB('lightblue');
-			domQueryC(0);
-			domQueryD(0);
+			domQueryC('2px dotted black');
+			domQueryD('lightblue');
 
 	})(); // iife end	
 
